@@ -14,14 +14,30 @@ Mac OS X: ~/Library/Preferences/Autodesk/maya/<version>/scripts
 Linux: ~/maya/<version>/scripts
 ```
 
-Or clone this repo to *<your_path>* amd then in Maya console do:
+Or clone this repo to *"your_path"* amd then in Maya console do:
 
 ```python
 import sys
-sys.path.append(<your_path>)
+sys.path.append("your_path")
+
 import lwmaya
 reload(lwmaya)
-lwmaya.ui.main()
-lwmaya.app.main()
+
+lwmaya.main.run()
 ```
-# LWMaya
+
+### Developers guidline
+
+The functionality split per render. Each render has it own class and file.
+Every render class follows <render_name>Config patern and must inherit from abstract base class Render.
+
+For example MRayConfig(Render), VRayConfig(Render), ArnoldConfig(Render), etc.
+
+The entry point for user to launch the application is `main.py` file that contains `run()` function.
+
+### Locations
+> docs
+Contains any documentation or manual files related to the project.
+
+> tests
+Contains Maya project scenes, test images, unit test scripts etc.

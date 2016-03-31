@@ -1,4 +1,3 @@
-import app
-import ui
-reload(app)
-reload(ui)
+import main
+
+reload(main)

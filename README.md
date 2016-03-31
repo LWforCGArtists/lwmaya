@@ -1,4 +1,4 @@
-# Maya Linear Workkflow
+# Maya Linear Workflow
 
 ## Developers notes
 

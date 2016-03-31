@@ -29,7 +29,7 @@ lwmaya.main.run()
 ### Developers guidline
 
 The functionality split per render. Each render has it own class and file.
-Every render class follows <render_name>Config patern and must inherit from abstract base class Render.
+Every render class follows <render_name>Config patern and must inherit from abstract base class **Render**.
 
 For example 
 ``` python

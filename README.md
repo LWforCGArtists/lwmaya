@@ -36,12 +36,11 @@ For example
 class MRayConfig(Render)
 class VRayConfig(Render)
 class ArnoldConfig(Render)
-etc.
 ```
 
 The entry point for user to launch the application is `main.py` file that contains `run()` function.
 
-### Locations
+### Folders
 > docs
 
 Contains any documentation or manual files related to the project.

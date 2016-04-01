@@ -4,6 +4,8 @@
 
 This section contains some tips how to get started with this module as a developer.
 
+Please follow [PEP8](https://www.python.org/dev/peps/pep-0008/) style guide for you code. You can use [PyCharm](https://www.jetbrains.com/pycharm/download/) IDE which is enforce this style by deffalt.
+
 ### How to run for development
 
 Place this repo folder in one of your default Maya script directory:

@@ -1,13 +1,13 @@
 # This is the main file to start the application
 
-import vray
+import ui
 
-# Reload procedures
-# Disable this for release!
-reload(vray)
+# Reload for testing
+# Remove for release!
+reload(ui)
 
-from vray import VRayConfig
+from ui import MainWindow
 
 def run():
-    vray_config = VRayConfig()
-    vray_config.set_linear_settings()
+    w = MainWindow()
+    w.show(dockable=True, floating=False, area='left')

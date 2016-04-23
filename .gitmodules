@@ -1,0 +1,6 @@
+[submodule "modules/pathlib"]
+	path = modules/pathlib
+	url = https://github.com/Kif11/kk-pathlib
+[submodule "modules/logger"]
+	path = modules/logger
+	url = https://github.com/Kif11/kk-logger

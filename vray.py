@@ -86,9 +86,10 @@ class VRayConfig(Renderer):
         # Make sure that VRay plugin loaded
         # and render tab set to vray
         pm.mel.loadPlugin('vrayformaya')
+        pm.mel.vrayRegisterRenderer()
+        pm.mel.vrayCreateVRaySettingsNode()
         current_renderer = pm.Attribute('defaultRenderGlobals.currentRenderer')
         current_renderer.set('vray')
-
         # Get scene VRay settngs node
         vray_settings = pm.PyNode('vraySettings')
 
